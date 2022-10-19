@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../assets/img/modern-futuristic.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.user {
+    margin-top: 55px;   
+}
+
+.slogan {
+    font-family:'Silkscreen', cursive;
+    text-shadow: black 0.2em 0.2em 0.1em;
+}
+
+.headerHeight {
+    height: 100px;
+}
+
+.pWelcome {
+    margin-top: -15px;
+}
+
+.records {
+    width: 100%;
+    user-select: none;
+}
+
+.records th {
+    background: linear-gradient(rgba(48, 45, 45, 0.5), rgba(48, 45, 45, 0.5) 100%);
+}
+
+.records tbody tr:hover {
+    background: #2f2c2c;
+}
+
+#tblData tr td {
+    color: white;
+}
+
+.records th:last-child,
+.records td:last-child,
+.records th:first-child,
+.records td:first-child {
+   text-align: center;  
+}
+
+.records tbody tr {
+    background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5) 100%);
+}
+
+.btnAction {
+    width: 70px;
+    margin-left: 5px;
+}
+
+#btn-edit{
+    display: none;
+}
+
+.loading {
+    background: url('../assets/img/modern-futuristic.jpg') no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

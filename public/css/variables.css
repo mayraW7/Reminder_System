@@ -1,0 +1,8 @@
+:root {
+    --primary-color: -webkit-linear-gradient(#4f0f67, #d400ff) !important;
+    --secondary-color:#0c040bbc;
+    --description: rgb(219, 212, 212);
+	--shadow:  5px 5px 5px rgba(0, 0, 0, 0.748), -0.4em 0 0.9em  #ff00ff4b;
+	--shadow-higth: 20px 5px 20px rgba(255, 0, 255, 0.26), -2em 0 0.9em rgba(255, 0, 255, 0.603); 
+    --textShadow: 0 14px 28px rgba(0, 0, 0, 0.734), 0 10px 10px rgba(0, 0, 0, 0.728);
+}
