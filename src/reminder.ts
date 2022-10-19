@@ -4,7 +4,7 @@ let i = setInterval(function () {
     (<HTMLElement>document.getElementById("loading")).style.display = "none";
     (<HTMLElement>document.getElementById("content")).style.display = "block";
 
-}, 3000);
+}, 6000);
 
 let userLogged = JSON.parse(localStorage.getItem('userLogged') || '{}');
 let logged = (<HTMLElement>document.querySelector('#logged'));
@@ -91,13 +91,13 @@ function render(newTask: Task) {
     rowTable.setAttribute('id', `${newTask.id}`);
     buttonEdit.setAttribute('data-bs-toggle', 'modal');
     buttonEdit.setAttribute('data-bs-target', '#exampleModal');
-    buttonEdit.setAttribute('class', 'btn btn-primary btnAction');
+    buttonEdit.setAttribute('class', 'btn btn-primary rounded-pill btnAction');
     buttonEdit.innerHTML = 'Edit';
     buttonEdit.addEventListener('click', () => {
         settings(newTask.id);
     });
 
-    buttonDelete.setAttribute('class', 'btn btn-danger btnAction');
+    buttonDelete.setAttribute('class', 'btn btn-danger rounded-pill btnAction');
     buttonDelete.innerHTML = 'Delete';
     buttonDelete.addEventListener('click', () => {
         deleteTask(newTask.id);

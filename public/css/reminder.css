@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-
+@import url('./variables.css');
 * {
     margin: 0;
     padding: 0;
@@ -13,11 +13,21 @@ body {
     width: 100vw;
 }
 
-.user {
-    margin-top: 55px;   
+#logout {
+    margin-top: 10%;
+    width: 300px;
+    font-family:'Silkscreen', cursive;
+    box-shadow: var(--shadow-blue);
 }
 
-.slogan {
+h5{
+    width: 300px;
+    font-family:'Silkscreen', cursive;
+}
+table {
+    border: none;
+}
+.slogan, .new {
     font-family:'Silkscreen', cursive;
     text-shadow: black 0.2em 0.2em 0.1em;
 }
@@ -26,21 +36,28 @@ body {
     height: 100px;
 }
 
-.pWelcome {
-    margin-top: -15px;
+.new {
+    width: 80px;
+    height: 80px;
+    border: none;
+    box-shadow: var(--shadow-blue);
+    background: linear-gradient(rgba(48, 45, 45, 0.5), #494cd760);
+    color: white;
 }
-
+.new:hover{
+    background: linear-gradient(rgba(48, 45, 45, 0.5), #0105ff60);
+}
 .records {
     width: 100%;
     user-select: none;
 }
 
 .records th {
-    background: linear-gradient(rgba(48, 45, 45, 0.5), rgba(48, 45, 45, 0.5) 100%);
+    background: linear-gradient(rgba(48, 45, 45, 0.5), #0105ff60);
 }
 
 .records tbody tr:hover {
-    background: #2f2c2c;
+    background: linear-gradient(rgba(48, 45, 45, 0.5), #0026ff60);
 }
 
 #tblData tr td {
@@ -55,7 +72,7 @@ body {
 }
 
 .records tbody tr {
-    background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5) 100%);
+    background: rgba(12, 12, 12, 0.5);
 }
 
 .btnAction {
@@ -70,7 +87,7 @@ body {
 .loading {
     background: url('../assets/img/modern-futuristic.jpg') no-repeat;
     background-size: cover;
-    margin: 0 auto;
+    margin-top: 300px;
     color: white;
     width: 100vw;
     height: 100vh;

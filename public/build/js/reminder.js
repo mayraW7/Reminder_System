@@ -3,7 +3,7 @@ let i = setInterval(function () {
     clearInterval(i);
     document.getElementById("loading").style.display = "none";
     document.getElementById("content").style.display = "block";
-}, 3000);
+}, 6000);
 let userLogged = JSON.parse(localStorage.getItem('userLogged') || '{}');
 let logged = document.querySelector('#logged');
 let btnLogout = document.querySelector('#logout');
@@ -70,12 +70,12 @@ function render(newTask) {
     rowTable.setAttribute('id', `${newTask.id}`);
     buttonEdit.setAttribute('data-bs-toggle', 'modal');
     buttonEdit.setAttribute('data-bs-target', '#exampleModal');
-    buttonEdit.setAttribute('class', 'btn btn-primary btnAction');
+    buttonEdit.setAttribute('class', 'btn btn-primary rounded-pill btnAction');
     buttonEdit.innerHTML = 'Edit';
     buttonEdit.addEventListener('click', () => {
         settings(newTask.id);
     });
-    buttonDelete.setAttribute('class', 'btn btn-danger btnAction');
+    buttonDelete.setAttribute('class', 'btn btn-danger rounded-pill btnAction');
     buttonDelete.innerHTML = 'Delete';
     buttonDelete.addEventListener('click', () => {
         deleteTask(newTask.id);
